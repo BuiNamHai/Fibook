@@ -1,0 +1,339 @@
+						/*Layout styles*/ 
+
+body {
+	margin:0;
+	background:url(../images/bg-body.jpg);
+}
+.page {
+	background:url(../images/bg-header.jpg) no-repeat center top;
+}
+
+							/*Header*/ 
+.header {
+	background:url(../images/bg-navigation.jpg) no-repeat center 90px;
+	width:940px;
+	margin: 0 auto;
+	height:105px;
+	padding: 20px 10px 20px;
+}
+.header a#logo {
+	margin: -5px 0 0 50px;
+	display:block;
+	float:left;
+	outline:none;
+}
+.header a#logo img {
+	margin: 0 0 10px 10px;
+	border:0;
+	height: 84px;
+	width: 80px;
+}
+.header ul {
+	font-weight: bold;
+	margin:0;
+	list-style:none;
+	padding:25px 0 0;
+	float:right;
+}
+.header ul li {
+	float:left;
+	margin:0 0 0 63px;
+}
+.header ul li.selected a, .header ul li a:hover {
+	color:#f78117;
+}
+.header ul li a {
+	font-size:16px;
+	text-decoration:none;
+	color:#5e5e5e;
+	font-family: 'Roboto';
+	outline:none;
+}
+
+.header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f78117;
+    min-width: 150px;
+    box-shadow: -5px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+	border-radius: 5px;
+}
+.header .dropdown-content a {
+    color: rgb(26, 26, 26);
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	border-radius: 5px;
+}
+.header .dropdown-content a:hover {
+    background-color: #cf6100;
+    color: white;
+}
+.header .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+							/*Body*/ 
+.body {
+	width:940px;
+	margin:0 auto;
+	padding:0 10px;
+	overflow:hidden;
+}
+.body div#featured {
+	background-size: contain;
+	background-image: url(../images/Image-Main.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.body div#featured h3 {
+	color:#f78117;
+	font-size:36px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	margin:-10px 0 40px;
+	width:490px;
+	padding:100px 0 0;
+}
+.body div#featured p {
+	width:480px;
+	color:#414141;
+	font-family: 'Roboto';
+	font-size:17px;
+	line-height:25px;
+	text-shadow: 0 1px 0 #fcfcfc;
+	text-align:justify;
+	margin:20;
+}
+.body div#featured input {
+	background:url(../images/interface.jpg) no-repeat;
+	border:0;
+	height:48px;
+	width:216px;
+}
+.body ul.blog {
+	list-style:none;
+	margin:40px 0 0;
+	padding:0 0 0;
+	background:url(../images/separator.jpg) no-repeat center top;
+	overflow:hidden;
+}
+.body ul.blog li:first-child {
+	margin:60px 0 0;
+}
+.body ul.blog li {
+	float:left;
+	background:url(../images/interface.jpg) no-repeat 0 -68px!important;
+	margin:60px 0 0 48px;
+	height:400px;
+	padding:0;
+}
+.body ul.blog li div {
+	width:281px;
+	height: 350px;
+	text-align:center;
+	padding: 12px 0 0 0;
+	float:none;
+	margin:0;
+	background:none;
+}
+.body ul.blog li div a img {
+	border-radius: 5px;
+	margin: 0 2px 0 0px;
+	height: 90%;
+    width: 90%;
+}
+.body ul.blog li div a img:hover {
+	filter:alpha(opacity=80);
+	opacity:0.7;
+}
+.body ul.blog li div p {
+	width:258px;
+	text-align:justify;
+	color:#414141;
+	font-family: 'Roboto';
+	margin:10px 0 0 10px;
+	line-height:20px;
+	font-size:14px;
+	background:none;
+	padding:0;
+}
+.body ul.blog li div a:first-child {
+	margin:0;
+	padding:0;
+	background:none;
+	width:auto;
+}
+.body ul.blog li div a:hover {
+	color:#f78017;
+}
+.body ul.blog li div a {
+	color:#ffffff;
+	font-family: 'Roboto';
+	text-decoration:none;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	display:block;
+	width: 150px;
+	outline:none;
+	font-size:16px;
+	font-weight:normal;
+}
+.body h3 {
+	font-family: 'Roboto';
+	font-size:16px;
+	font-weight:bold;
+	color:#3a3a3a;
+	margin:15px 0 0;
+	line-height:21px;
+}
+.body p {
+	font-family: 'Roboto';
+	font-size:16px;
+	text-align:justify;
+	color:#3a3a3a;
+	margin:0 0 20px;
+	line-height:21px;
+}
+
+
+.body button {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #ec7913;
+	border: none;
+	color: #f3f3f3;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 20px;
+	padding: 15px;
+	width: 180px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 10px 0 0 130px;
+  }
+  .body ul.blog li div button {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #ec7913;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 15px;
+	padding: 15px;
+	width: 180px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 40px 0 0 0;
+  }
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	color: white
+  }
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+.button:hover span {
+	padding-right: 25px;
+  }
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+
+.body ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.body ul li div.featured ul li a img:hover {
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.body ul li div.featured a {
+	clear:both;
+	display:block;
+	font-size:13px;
+	font-family: 'Roboto';
+	text-decoration:none;
+	color:#8a8889;
+	font-weight:bold;
+	padding:5px 0 0;
+	width:auto;
+	outline:none;
+}
+
+.body ul.paging {
+	margin:15px 0 10px 350px;
+}
+.body ul.paging li {
+	float:left;
+	padding:0 5px;
+	background:none;
+}
+.body ul.paging li a {
+	text-decoration:none;
+	color:#3a3a3a;
+	font-family: 'roboto';
+	font-size: 15px;
+}
+.body ul.paging li a:hover {
+	color:#f78017;
+}
+
+							/*Footer*/ 
+.footer {
+	width:940px;
+	background:url(../images/bg-footer.jpg) no-repeat center top;
+	padding:65px 10px 30px 35px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.footer ul {
+	list-style:none;
+	margin:0 0 0 80px;
+	padding:0;
+	overflow:hidden;
+	float:left;
+}
+.footer ul li {
+	float:left;
+}
+.footer ul li a {
+	border-width: 1px;
+	border-color:#3a3a3a;
+	border-style: none none none solid;
+	color:#3a3a3a;
+	font-size:12px;
+	font-family: 'Roboto';
+	text-decoration:none;
+	font-weight:bold;
+	padding:0 6px;
+	outline:none;
+}
+.footer ul li a:hover {
+	color:#f28220;
+}
+.footer p {
+	color:#3a3a3a;
+	font-size:12px;
+	font-family: 'Roboto';
+	font-weight:bold;
+	float:left;
+	margin:0 0 0 180px;
+}
